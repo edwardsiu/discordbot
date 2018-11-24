@@ -1,0 +1,12 @@
+[Unit]
+Description=discord bot
+After=syslog.target network.target
+
+[Service]
+WorkingDirectory=/home/USER/discordbot-base/src
+Type=simple
+ExecStart=/home/USER/discordbot-base/env/bin/python /home/USER/discordbot-base/src/run.py
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

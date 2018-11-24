@@ -1,0 +1,3 @@
+token: "My Bot Token"
+client_id: "My Client Id"
+command_prefix: "$"
